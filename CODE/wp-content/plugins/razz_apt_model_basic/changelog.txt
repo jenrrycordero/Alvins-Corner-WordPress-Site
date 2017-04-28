@@ -1,0 +1,10 @@
+2.1
+	- Added several options on the code to assure that the js code is only included on the page with the shortcode. To avoid conflicts with ids and so.
+	- fix integration with custom css option
+
+2.0
+    - ACF integration for all the options and settings.
+    - Add support to display (and delete) the filters in the options page.
+
+1.0
+    - Basic version. Support for new models information, display oif the shortcode, options page..

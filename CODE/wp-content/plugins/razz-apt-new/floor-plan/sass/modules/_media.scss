@@ -1,0 +1,142 @@
+/* ==================================================
+      Media Queries
+ ================================================== */
+
+
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 1023px) {
+
+}
+
+@media only screen and (max-width: 960px) {
+	#fp-modal-wrap {
+	}
+}
+
+@media only screen and (max-width: 920px) {
+
+}
+
+@media only screen and (max-width: 800px) {
+	#content-wrap {
+
+		.primary {
+			float: none;
+			width: 100%;
+			padding-left: 0;
+			margin-left: 0;
+			margin-right: 0;
+			
+		}
+
+		.sidebar {
+			float: none;
+			width: 100%;
+			padding-right: 0;
+			padding-left: 0;
+		}
+
+		.model-details {
+			margin-top: 30px;
+		}
+	}
+
+}
+@media only screen and (min-width: 769px) {
+	
+}
+/* TABLET POSTRAIT */
+@media only screen and (max-width: 768px) {
+	
+}
+
+@media only screen and (max-width: 480px) {
+
+
+
+	#fp-modal-wrap {
+
+		.wrapper {
+			width: 100%;
+			margin: 0;
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+
+
+		.fp-modal-prev,
+		.fp-modal-next {
+			// display: none;
+			margin-top: -15px;
+			position: absolute;
+			@include set-sprite-dimensions( $fp_icon, angle-left_s );
+		}
+		.fp-modal-prev {
+			left: 4px;
+			background-position: sprite-position( $fp_icon, angle-left_s);
+			
+			&:hover {
+				// opacity: 1;
+				background-position: sprite-position( $fp_icon, angle-left_active_s);
+			}
+		}
+		.fp-modal-next {
+			right: 4px;
+			background-position: sprite-position( $fp_icon, angle-right_s);
+			
+			&:hover {
+				// opacity: 1;
+				background-position: sprite-position( $fp_icon, angle-right_active_s);
+			}
+		}
+	}
+
+	#content-wrap {
+
+
+		.model-info-row {
+			// @include make-row();
+			// margin-left: 0;
+			// margin-right: 0;
+			// margin-bottom: 2px;
+
+			.info-col {
+				// @include make-col(1,3,1px);
+				// width: 100%;
+				// padding-left: 0;
+				// padding-right: 0;
+				// float: none;
+
+				&.info-col {
+					// margin-top: 2px;
+				}
+
+				p {
+					font-size: 12px;
+					&.mobile-bold {
+						// font-weight: bold;
+					}
+				}
+			}
+		}
+
+		.model-details {
+			margin-top: 15px;
+		}
+
+		.model-links-wrap {
+			margin-bottom: 15px;
+		}
+	}
+	
+}
+
+@media only screen and (max-width: 380px) {
+	
+	
+}
+
+@media only screen and (max-width: 320px) {
+	
+
+}

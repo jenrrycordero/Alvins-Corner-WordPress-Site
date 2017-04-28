@@ -1,0 +1,117 @@
+@mixin set-sprite( $map, $name ) {
+	background: $map no-repeat;
+	@include set-sprite-dimensions( $map, $name );
+	background-position: sprite-position( $map, $name );
+}
+
+@mixin set-sprite-dimensions( $map, $name ) { 
+	 $file: sprite-file($map, $name);
+	 width: image-width( $file );
+	 height: image-height( $file );
+}
+
+
+
+@mixin set-retina-sprites( $normal, $retina, $name) {
+
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+	  /* High-res styles go here */
+		background: $retina;
+		$file: sprite-file($retina, $name);
+		$w: image-width( $file ) / 2;
+		$h: image-height( $file ) / 2;
+		$ypos: round(nth(sprite-position($retina, $name), 2) / 2);
+      	background-position: 0 $ypos;
+		background-size: $w auto; 
+		width: $w;
+		height: $h;
+	}
+
+}
+
+@mixin make-row() {
+	
+	&:before,
+	&:after {
+		display: table;
+		content: " ";
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin make-col( $col, $dir:left, $max:16, $pad:10px ) {
+	display: block;
+	float: $dir;
+	width: percentage($col / $max);
+	padding-left: 10px;
+	padding-right: 10px;
+	min-height: 1px;
+}
+
+@mixin box-sizing() {	
+
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+	*:before,
+	*:after {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+}
+
+@mixin css-transitions() {
+	-webkit-transition: 0.4s all ease;
+	   -moz-transition: 0.4s all ease;
+	    -ms-transition: 0.4s all ease;
+	     -o-transition: 0.4s all ease;
+	        transition: 0.4s all ease;
+	
+}
+
+// custom border-radius
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+       -moz-border-radius: $radius;
+    		border-radius: $radius; 
+}
+
+// custom transform-rotate
+@mixin transform-rotate( $deg ) {
+	-webkit-transform: rotate( $deg );
+	   -moz-transform: rotate( $deg );
+	    -ms-transform: rotate( $deg );
+	     -o-transform: rotate( $deg );
+	        transform: rotate( $deg );
+}
+
+// custom transition
+@mixin transition-css ( $trans ) {
+	-webkit-transition: ( $trans );
+	   -moz-transition: ( $trans );
+	    -ms-transition: ( $trans );
+	     -o-transition: ( $trans );
+			transition: ( $trans );
+}
+
+@mixin breakpoint($minmax, $point) {
+	@media ($minmax: $point) { @content; }
+	
+}
+
+@mixin breakpoint-until($max, $point1, $min, $point2) {
+	@media ($max: $point1) and ($min: $point2) { @content; }
+	
+}
+
+@mixin retina-styles() {
+	@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+		@content;
+	}
+}

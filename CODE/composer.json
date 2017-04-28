@@ -1,0 +1,24 @@
+{
+    "name": "razz/alta-market-central",
+    "description": "Alta Market Central Splash site",
+    "minimum-stability": "dev",
+    "license": "proprietary",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/css-javascript-toolbox": "dev-trunk",
+        "wpackagist-plugin/wp-maintenance-mode": "dev-trunk",
+        "wpackagist-plugin/bugherd": "dev-trunk",
+        "wpackagist-plugin/duplicate-post": "dev-trunk",
+        "wpackagist-plugin/contact-form-7": "dev-trunk",
+        "wpackagist-plugin/really-simple-captcha": "dev-trunk",
+        "wpackagist-plugin/flamingo": "dev-trunk",
+        "wpackagist-plugin/wordpress-seo": "dev-trunk",
+        "wpackagist-plugin/google-adwords-remarketing": "dev-trunk",
+        "wpackagist-plugin/composer": "dev-trunk"
+    }
+}

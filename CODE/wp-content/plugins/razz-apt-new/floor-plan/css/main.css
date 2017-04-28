@@ -1,0 +1,431 @@
+/* ==========================================================================
+    // Site Styles
+========================================================================== */
+/* HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+
+html {
+  font-size: 1em;
+  line-height: 1.4;
+}
+
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.browsehappy {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0;
+}
+
+/* ==================================================
+     General
+================================================== */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  position: relative;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* ==================================================
+     Modal BG Overlay
+================================================== */
+.fp-modal-bgoverlay {
+  position: fixed;
+  z-index: 7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  background: url('../img/bg-overlay.png?1405441450') repeat top left;
+}
+
+/* ==================================================
+     Modal
+================================================== */
+#fp-modal-wrap {
+  position: absolute;
+  z-index: 8;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 48px;
+}
+#fp-modal-wrap a {
+  color: #464646;
+}
+#fp-modal-wrap a:hover {
+  color: #606060;
+}
+#fp-modal-wrap .wrapper {
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#fp-modal-wrap .fp-modal-close {
+  border: none;
+  position: fixed;
+  z-index: 9;
+  top: 14px;
+  right: 14px;
+  background: none;
+  opacity: 0.6;
+}
+#fp-modal-wrap .fp-modal-close:focus {
+  outline: none;
+}
+#fp-modal-wrap .fp-modal-close:hover {
+  opacity: 1;
+}
+#fp-modal-wrap .fp-modal-prev,
+#fp-modal-wrap .fp-modal-next {
+  position: absolute;
+  z-index: 9;
+  color: #fff;
+  text-shadow: 0px 1px 6px #212121;
+  top: 50%;
+  margin-top: -21px;
+  background: url('../img/icon-sabf30c8c93.png') no-repeat;
+  width: 29px;
+  height: 43px;
+}
+#fp-modal-wrap .fp-modal-prev .fa,
+#fp-modal-wrap .fp-modal-next .fa {
+  line-height: 1.2;
+}
+#fp-modal-wrap .fp-modal-prev {
+  background-position: 0 -210px;
+  left: 14px;
+}
+#fp-modal-wrap .fp-modal-prev:hover {
+  background-position: 0 -167px;
+}
+#fp-modal-wrap .fp-modal-next {
+  background-position: 0 -253px;
+  right: 14px;
+}
+#fp-modal-wrap .fp-modal-next:hover {
+  background-position: 0 -124px;
+}
+#fp-modal-wrap .model-moreinfo {
+  font-size: 15px;
+}
+#fp-modal-wrap .model-moreinfo td:first-child {
+  color: #a0a0a0;
+  padding-right: 30px;
+}
+#fp-modal-wrap .model-moreinfo td:last-child {
+  font-weight: 500;
+}
+
+/* ==================================================
+     Modal Content
+================================================== */
+#content-wrap .primary {
+  width: 100%;
+  margin-right: 10px;
+  margin-left: -330px;
+  padding-left: 330px;
+  float: right;
+  position: relative;
+  z-index: 3;
+}
+#content-wrap .sidebar {
+  width: 320px;
+  float: left;
+  padding-right: 15px;
+  padding-left: 15px;
+  position: relative;
+  z-index: 4;
+}
+#content-wrap .model-info-row {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 2px;
+  position: relative;
+  overflow: hidden;
+}
+#content-wrap .model-info-row:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: auto;
+  width: 5px;
+  background: #5e717f;
+}
+#content-wrap .model-info-row .info-col {
+  display: block;
+  float: left;
+  width: 33%;
+  min-height: 1px;
+  padding-left: 0;
+  padding-right: 0;
+}
+#content-wrap .model-info-row .info-col:first-child + .info-col {
+  width: 34%;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+#content-wrap .model-info-row .info-col p {
+  background: #5e717f;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+#content-wrap .model-preview {
+  background: #fff;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  vertical-align: middle;
+}
+#content-wrap .model-preview > .model-preview-wrap {
+  width: 100%;
+  vertical-align: middle;
+}
+#content-wrap .model-preview > .model-preview-wrap img {
+  position: relative;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+}
+#content-wrap .model-details .model-name {
+  font-size: 25px;
+  font-weight: bold;
+  margin: 0;
+  line-height: 27px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#content-wrap .model-details .model-desc {
+  font-size: 17px;
+  font-weight: 300;
+  margin: 5px 0 0;
+  line-height: 19px;
+  text-transform: uppercase;
+  color: #fff;
+}
+#content-wrap .model-links-wrap {
+  margin: 30px 0 15px;
+}
+#content-wrap .model-links-wrap a {
+  display: block;
+  background: #3b4a56;
+  margin: 0;
+  padding: 18px 0;
+  font-size: 16px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-decoration: none;
+  -webkit-transition: 0.4s all ease;
+  -moz-transition: 0.4s all ease;
+  -o-transition: 0.4s all ease;
+  -ms-transition: 0.4s all ease;
+  transition: 0.4s all ease;
+}
+#content-wrap .model-links-wrap a + a {
+  margin-top: 2px;
+}
+#content-wrap .model-links-wrap a.active, #content-wrap .model-links-wrap a:hover {
+  background: #6d8292;
+}
+
+.display-table {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.display-table .display-table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+/* ==================================================
+      Media Queries
+ ================================================== */
+/* TABLET LANDSCAPE */
+@media only screen and (max-width: 800px) {
+  #content-wrap .primary {
+    float: none;
+    width: 100%;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  #content-wrap .sidebar {
+    float: none;
+    width: 100%;
+    padding-right: 0;
+    padding-left: 0;
+  }
+  #content-wrap .model-details {
+    margin-top: 30px;
+  }
+}
+/* TABLET POSTRAIT */
+@media only screen and (max-width: 480px) {
+  #fp-modal-wrap .wrapper {
+    width: 100%;
+    margin: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  #fp-modal-wrap .fp-modal-prev,
+  #fp-modal-wrap .fp-modal-next {
+    margin-top: -15px;
+    position: absolute;
+    width: 21px;
+    height: 31px;
+  }
+  #fp-modal-wrap .fp-modal-prev {
+    left: 4px;
+    background-position: 0 0;
+  }
+  #fp-modal-wrap .fp-modal-prev:hover {
+    background-position: 0 -62px;
+  }
+  #fp-modal-wrap .fp-modal-next {
+    right: 4px;
+    background-position: 0 -31px;
+  }
+  #fp-modal-wrap .fp-modal-next:hover {
+    background-position: 0 -93px;
+  }
+
+  #content-wrap .model-info-row .info-col p {
+    font-size: 12px;
+  }
+  #content-wrap .model-details {
+    margin-top: 15px;
+  }
+  #content-wrap .model-links-wrap {
+    margin-bottom: 15px;
+  }
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+.ir {
+  background-color: transparent;
+  border: 0;
+  overflow: hidden;
+  *text-indent: -9999px;
+}
+
+.ir:before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 150%;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}

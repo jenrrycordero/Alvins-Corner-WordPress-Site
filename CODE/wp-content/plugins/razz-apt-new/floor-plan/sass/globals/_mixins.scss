@@ -1,0 +1,62 @@
+// ======================================================================
+   // Mixins
+// ======================================================================
+@mixin set-sprite( $map, $name ) {
+	background: $map no-repeat;
+	@include set-sprite-dimensions( $map, $name );
+	background-position: sprite-position( $map, $name );
+}
+
+@mixin set-sprite-dimensions( $map, $name ) { 
+	 $file: sprite-file($map, $name);
+	 width: image-width( $file );
+	 height: image-height( $file );
+}
+
+@mixin make-row() {
+	
+	&:before,
+	&:after {
+		display: table;
+		content: " ";
+	}
+
+	&:after {
+		clear: both;
+	}
+}
+
+@mixin make-col( $col, $max:16, $pad:10px, $dir:left ) {
+	display: block;
+	float: $dir;
+	width: percentage($col / $max);
+	min-height: 1px;
+	padding-left: $pad;
+	padding-right: $pad;
+}
+
+@mixin css-transitions() {
+	-webkit-transition: 0.4s all ease;
+	-moz-transition: 0.4s all ease;
+	-o-transition: 0.4s all ease;
+	-ms-transition: 0.4s all ease;
+	transition: 0.4s all ease;
+	
+}
+
+@mixin box-sizing() {	
+
+	* {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+	*:before,
+	*:after {
+	  -webkit-box-sizing: border-box;
+	     -moz-box-sizing: border-box;
+	          box-sizing: border-box;
+	}
+}
+
+

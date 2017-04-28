@@ -1,0 +1,92 @@
+.masthead {
+	position: fixed;
+	width: 100%;
+	z-index: 999;
+	.x-navbar {
+		height: 90px; 
+		border-bottom: none;
+
+		@include breakpoint(max-width, 550px) { height: 110px; }
+		@include breakpoint(max-width, 475px) { height: 100px; }
+	}
+
+	.site-logo {
+		display: inline-block;
+		margin: 0;
+		@include breakpoint(max-width, 650px) { width: 40%; }
+		@include breakpoint(max-width, 550px) { width: auto; }
+		@include breakpoint(max-width, 475px) { width: 50%; }
+	}
+
+	.topbar-container {
+		display: inline-block;
+		float: right;
+		padding: 10px 0 0 0;
+		@include breakpoint(max-width, 550px) { width: auto; }
+
+		@include breakpoint(max-width, 475px) {	 padding-top: 0;	}
+
+	}
+	.contact-number {
+		color: $site_lightgrey;
+		display: inline-block;
+		font-family: 'Myriad Pro Condensed-Regular', $safe_font;
+		font-size: 25px;
+		font-weight: bold;
+		margin: 0;
+		vertical-align: middle;
+		@include breakpoint(max-width, 650px) { font-size: 18px; line-height: 25px; }
+		@include breakpoint(max-width, 475px) { font-size: 16px;  }
+	}
+	.applynow-button {
+		background: $site_orange;
+		border: 1px solid $site_orange;
+		color: white;
+		display: inline-block;
+		font-family: 'Avenir-Regular', $safe_font;
+		margin-left: 10px;
+		padding: 7px 20px;
+		text-transform: uppercase;
+		&:hover {
+			background: none;
+			border: 1px solid white;
+		}
+		@include breakpoint(max-width, 650px) { margin-left: 0; }
+		@include breakpoint(max-width, 550px) { display: block; text-align: center;  text-align:center; }
+	}
+	.top-content {
+		@include breakpoint(max-width, 550px) { text-align: right; }
+	}
+	.top-social {
+		float: right;
+		padding: 3px 0;
+
+		// @include breakpoint(max-width, 475px) { float: none; margin: 0 auto; width: 100px; }
+
+		.fa {
+			background: #3f4544;
+			border: 1px solid #3f4544;
+			position: relative;
+			border-radius: 25px;
+			-webkit-border-radius: 25px;
+			-moz-border-radius: 25px;
+
+			color: white;
+			display: inline-block;
+			margin: 2px 3px;
+			padding: 6.5px;
+			text-align: center;
+			width: 27px;
+
+			transition: 0.35s all;
+			-webkit-transition: 0.35s all;
+			-moz-transition: 0.35s all;
+			behavior: url('/css/pie/PIE.php');
+
+			&:hover {
+				background: white;
+				color: #3f4544;
+			}
+		}
+	}	
+}

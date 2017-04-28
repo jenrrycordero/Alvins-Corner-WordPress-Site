@@ -1,0 +1,595 @@
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.clearfix {
+    clear: both;
+}
+
+.display-inline-block {
+    display: inline-block;
+}
+
+#remove-icon {
+    display: none;
+    right: 0px;
+    top: 0px;
+    cursor: pointer;
+    font-size: 2.7em;
+    background: #444;
+    border-radius: 100px;
+    width: 34px;
+    height: 34px;
+    text-align: center;
+    position: absolute;
+    color: white;
+    box-shadow: 1px 2px 3px -1px #444;
+}
+
+div:hover > #remove-icon {
+    display: block;
+}
+
+.metabox-field-group {
+    margin-bottom: 20px;
+}
+
+.metabox-field-group .title {
+    margin-bottom: 7px;
+    font-size: 110%;
+}
+
+.metabox-field-group .inline-input {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.small-input {
+    width: 4em;
+}
+
+.medium-input {
+    width: 20em;
+    max-width: 80%;
+}
+
+a, button {
+    outline: none !important;
+}
+
+#model-desc {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+/**********************************************************
+ ** elements of the admin apt model page.
+ ***/
+
+.c-lg-3 {
+    width: 23.2%;
+    float: left;
+}
+
+@media (max-width: 1850px) {
+    .c-lg-3 {
+        width: 23%
+    }
+}
+
+@media (max-width: 1750px) {
+    .c-lg-3 {
+        width: 22%
+    }
+}
+
+@media (max-width: 1350px) {
+    .c-lg-3 {
+        width: 46%
+    }
+}
+
+@media (max-width: 1100px) {
+    .c-lg-3 {
+        width: 45%
+    }
+}
+
+@media (max-width: 991px) {
+    .c-lg-3 {
+        width: 44%
+    }
+}
+
+@media (max-width: 768px) {
+    .c-lg-3 {
+        width: 44%;
+    }
+}
+
+@media (max-width: 468px) {
+    .c-lg-3 {
+        width: 94%;
+        float: none;
+    }
+}
+
+.post-type-razz-apt-model .postarea.wp-editor-expand {
+    display: none;
+}
+
+.post-type-razz-apt-model .ui-menu {
+    max-height: 200px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.post-type-razz-apt-model .ui-menu .ui-menu-item:hover,
+.post-type-razz-apt-model .ui-menu .ui-menu-item.ui-state-focus {
+    background-color: #ddd;
+    box-shadow: none;
+    background-image: none;
+    border: 0px;
+}
+
+.post-type-razz-apt-model .ui-menu .ui-menu-item {
+    padding: 6px 0 6px 2px;
+}
+
+.post-type-razz-apt-model li.ui-widget-content.ui-menu-divider {
+    display: none;
+}
+
+/**********************************************************
+ ** elements of the shortcode output.
+ ***/
+.item {
+    padding: 0 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.price-info {
+    text-align: right;
+}
+
+.sqft-info, .price-info {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.sqft-info{
+    width: 70%;
+    text-align: left;
+}
+.price-info {
+    width: 30%;
+}
+
+/*Added by Jenrry*/
+.short-space {
+    width: 38%
+}
+
+.no-price {
+    width: 60%
+}
+
+.item .details-header {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.item h3 {
+    margin-bottom: 2px;
+    font-size: 36px;
+    text-overflow: ellipsis;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.img-wrapper {
+    /* height: 250px; */
+    /* vertical-align: middle; */
+    display: block;
+    position: relative;
+    top: 0;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+div#razz-model-filter-wrapper {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.item .details-header {
+    padding: 10px 0;
+}
+
+.item .details-header * {
+    font-weight: 600 !important;
+}
+
+.item .details-header h3 {
+    overflow: visible;
+    font-size: 18px;
+}
+
+div#razz-model-filter-wrapper a {
+    text-align: center;
+    display: inline-block;
+    padding: 0 5px;
+    white-space: nowrap;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: #63666a;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.mobile-filter-list {
+    display: none;
+}
+
+div#razz-model-filter-wrapper .selected {
+    text-decoration: underline;
+}
+
+.item .item-contents {
+    box-shadow: 0px 0px 1px rgba(22, 22, 22, 0.28);
+}
+
+.details-footer {
+    background: #666;
+    color: white;
+    padding: 5px 5px
+}
+
+.details-footer span, .details-footer div {
+    color: white;
+    padding: 5px 0;
+}
+
+.item-contents img {
+    margin: 0 auto;
+    display: block;
+}
+
+.details-footer.extra-info-one, .details-footer.extra-info-one > div {
+    text-align: center !important;
+}
+
+/***********************  overlay for the response wrapper    *****/
+div#response-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    text-align: center;
+    display: none;
+    z-index: 10000;
+}
+
+div#response-overlay.visible {
+    display: block;
+}
+
+div#response-wrapper-content {
+    width: 1500px;
+    max-width: 90%;
+    margin: 0 auto;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+    -ms-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    opacity: 0;
+    margin-top: 0px;
+    background-color: white;
+    padding: 20px 30px;
+    position: relative;
+}
+
+.close {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    right: 0px;
+    top: -30px;
+    background-image: url('../media/fancybox-close@2x.png');
+    background-size: cover;
+    cursor: pointer;
+}
+
+i.fa.fa-bath {
+    background-image: url('../media/bath_icon.png');
+    background-color: black;
+    background-size: 100% auto;
+    background-position: center;
+    height: 12px;
+}
+
+div#response-overlay.visible div#response-wrapper-content {
+    opacity: 1;
+    margin-top: 150px;
+}
+
+#response-content h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-size: 1.7em;
+}
+
+div#left-column {
+    float: left;
+    width: 30%;
+    text-align: left;
+}
+
+div#content-column {
+    float: right;
+    width: 70%;
+    text-align: center;
+    position: relative;
+}
+
+div#content-column img {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#contents div#content-column img {
+    width: auto;
+}
+
+div#model-links-wrapper {
+    margin-top: 10px;
+}
+
+#model-links-wrapper a.button:hover {
+    background: #444;
+}
+
+#model-links-wrapper a.button {
+    display: block;
+    padding: 20px;
+    text-decoration: none;
+    font-style: normal;
+    border: 0px;
+    background: #666;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+div#model-information-wrapper > div {
+    position: relative;
+    font-size: 1.1em;
+    line-height: 1.9em;
+}
+
+#model-information-wrapper i {
+    width: 20px;
+    margin-right: 5px;
+}
+
+#model-information-wrapper span {
+    margin-left: 30px;
+    position: absolute;
+    left: 55px;
+}
+
+div#controls-wrapper {
+    width: 100%;
+    position: relative;
+    top: 260px;
+}
+
+div#pre-nav, div#next-nav {
+}
+
+div#pre-nav {
+    left: -60px;
+    position: absolute;
+}
+
+div#next-nav {
+    right: -60px;
+    position: absolute;
+}
+
+div#controls-wrapper a {
+    text-decoration: none;
+    border-bottom: none;
+}
+
+#left-column * {
+    color: rgb(44, 44, 44) !important;
+    letter-spacing: 0 !important;
+}
+
+#left-column .text-uppercase {
+    font-size: 1.2em !important;
+}
+
+#left-column #model-information-wrapper {
+    margin-bottom: 20px;
+}
+
+#response-content .col-md-6 {
+    width: 33.33333%;
+    float: left;
+    background-color: #616161;
+    padding: 15px 0;
+    border: 1px solid white;
+    text-transform: uppercase;
+    color: white;
+}
+
+#response-content .model-description p {
+    margin-top: 20px;
+    font-size: 11px !important;
+}
+
+#model-links-wrapper a.button {
+    background-color: rgb(44, 44, 44);
+    border-radius: 0;
+    margin-bottom: 4px;
+    color: white !important;
+}
+
+#controls-razz-model-wrapper #pre-nav {
+    left: 10px;
+    top: 49% !important;
+}
+
+#controls-razz-model-wrapper #next-nav {
+    right: 10px;
+    top: 49% !important;
+
+}
+
+#controls-razz-model-wrapper #next-nav i.fa, #controls-razz-model-wrapper #pre-nav i.fa {
+    color: #333;
+}
+
+#controls-razz-model-wrapper #next-nav:hover i.fa, #controls-razz-model-wrapper #pre-nav:hover i.fa {
+    color: #666;
+}
+
+/***********************************************************************************************************************
+ ****              MEDIA QUERIES
+ **********************************************************************************************************************/
+
+@media (min-width: 1200px) {
+    .item {
+        width: 25%;
+    }
+
+    div#razz-model-wrapper-container {
+        margin: 0 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .item {
+        width: 33%;
+    }
+}
+
+@media (max-width: 991px) {
+    .item {
+        width: 33%;
+    }
+}
+
+@media (max-width: 768px) {
+    div#response-wrapper-content {
+        max-width: 97%;
+    }
+
+    .item {
+        width: 50%;
+    }
+
+    div#left-column {
+        float: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    div#model-information-wrapper {
+        text-align: center;
+    }
+
+    div#model-information-wrapper > div {
+        display: inline-block;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    #model-information-wrapper > div span {
+        position: static;
+        margin-left: 4px;
+    }
+
+    .link-wrapper {
+        width: 50%;
+        display: inline-block;
+        padding: 0 4px;
+    }
+
+    div#content-column {
+        float: left;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    div#controls-wrapper {
+        width: 87%;
+        position: relative;
+        top: 30px;
+        margin: auto;
+    }
+
+    #model-links-wrapper a.button {
+        padding: 10px 0px;
+    }
+
+    #model-information-wrapper h4 {
+        text-align: left;
+    }
+    div#response-overlay.visible div#response-wrapper-content {
+        margin-top: 80px;
+    }
+}
+
+@media (max-width: 550px) {
+    div#model-information-wrapper > div {
+        display: inline-block;
+        margin-right: 20px;
+        text-align: left;
+    }
+
+    #response-content .col-md-6 {
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 480px) {
+    .item {
+        width: 86%;
+    }
+
+    div#controls-wrapper {
+        width: 82%;
+    }
+
+    div#model-information-wrapper {
+        margin-bottom: 10px;
+    }
+
+    div#model-information-wrapper > div {
+        display: inline-block;
+        width: 44%;
+    }
+}
+
+#response-wrapper-content .close {
+    opacity: 1;
+}
+div#response-overlay {
+    z-index: 999999;
+}

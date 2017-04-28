@@ -1,0 +1,240 @@
+.x-container-fluid {
+	&.offset { 
+		margin: 90px auto 0!important;
+		&.max { max-width: 100%; }
+		&.width { width: 100%; }
+	}
+	.entry-wrap {
+		padding: 0;
+	}
+	.hero-banner {
+		background-repeat: repeat!important;
+	}
+	.hero-banner-contactform {
+		margin: 0 auto;
+		width: 90%;
+
+		@include breakpoint(max-width, 768px) { width: 100%; }
+		.x-column {
+			& > p {
+				color: white;
+				font-family: 'Avenir-Light', $safe_font;
+				font-size: 17px;
+				padding: 0 15px;
+			}
+		}
+		.two-column {
+			display: inline-block;
+			width: 48.5%;
+			&.left {
+				float: left;
+			}
+			&.right {
+				float: right;
+			}
+		}
+		input,
+		select,
+		textarea {
+			border-radius: 0;
+			font-size: 16px;
+			font-family: 'Avenir-Light', $safe_font;
+
+			@include breakpoint(max-width, 950px) { font-size: 12px; line-height: 14px;}
+			@include breakpoint(max-width, 768px) { font-size: 18px; line-height: 1;}
+			@include breakpoint(max-width, 400px) { font-size: 12px; line-height: 14px;}
+			
+		}
+		.wpcf7-submit {
+			background: $site_orange;
+			border: 2px solid $site_orange;;
+			box-shadow: none;
+			font-size: 20px;
+			padding: 15px;
+			text-transform: uppercase;
+			text-shadow: none;
+			width: 100%;
+			&:hover {
+				background: none;
+				color: $site_orange;
+			}
+
+		}
+		.screen-reader-response {
+			display: none;
+		}
+		.wpcf7-not-valid-tip  {
+			color: white;
+			font-style: italic;
+			padding-left: 15px;
+		}
+	}
+	.fullwidth-text {
+		h2 {
+			color: $site_darkgrey;
+			font-family: 'Eveleth Thin', $safe_font;
+			margin: 0;
+			@include breakpoint(max-width, 450px) { font-size: 250%; }
+			@include breakpoint(max-width, 376px) { font-size: 200%; }
+		}
+		div {
+
+		}
+		p {
+			color: $site_darkgrey;
+			font-family: 'Avenir-Light', $safe_font;
+			font-size: 18px;
+			margin: 0 auto;
+			width: 60%;
+		}
+	}
+	.map-direction {
+		background-repeat: repeat!important;
+
+		h2 {
+			color: white;
+			font-family: 'Eveleth Regular', $safe_font;
+			font-size: 38px;
+			font-weight: normal;
+			margin: 0 auto 20px;
+			text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.66);
+			width: 50%;
+			@include breakpoint(max-width, 768px) { width: 75%; }
+			@include breakpoint(max-width, 400px) { width: 90%; }
+		}
+		p {
+			color: white;
+			text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.66);
+		}
+		.address {
+			font-family: 'No SevenBlack', $safe_font;
+			letter-spacing: 0.5px;
+			font-size: 23px;
+		}
+		.caption {
+			font-family: 'Avenir-Light', $safe_font;
+			font-size: 16px;
+			margin: 0 auto;
+			width: 80%;
+		}
+		.map-container {
+			height: 500px;
+			overflow: hidden;
+			margin: 0 auto;
+			width: 90%;
+			iframe {
+				margin-top: -200px;
+			}
+		}
+	}
+	.awc-content {
+		.x-column.whole {
+			width: 85%;	
+			@include breakpoint(max-width, 1600px) { width: 100%; height: 656px;}
+			@include breakpoint(max-width, 768px) { height: auto; }
+		}		
+		.marker {
+			color: white;
+			display: inline-block;
+			font-family: 'No SevenOrnaments', $safe_font;
+			font-size: 23px;
+			margin-bottom: 0;
+			padding-right: 5px;
+		}
+		h2 {
+			color: white;
+			display: inline-block;
+			font-family: 'No SevenBlack', $safe_font;
+			font-size: 23px;
+			font-weight: normal;
+			letter-spacing: 0.5px;
+
+			@include breakpoint(max-width, 900px) { margin-top: 0; }
+		}
+		.caption {
+			color: white;
+			font-family: 'Avenir-Light', $safe_font;
+			font-size: 16px;
+			padding-left: 25px;
+			width: 480px;			
+			@include breakpoint(max-width, 1600px) { width: 100%; }
+			@include breakpoint(max-width, 1050px) { font-size: 15px; }
+			@include breakpoint(max-width, 900px) { line-height: 1.65; }
+		}
+		.x-btn-square {
+			background: $site_orange;
+			border: 2px solid $site_orange;;
+			box-shadow: none;
+			margin-left: 20px;
+			padding: 20px 40px;
+			text-transform: uppercase;
+			&:hover {
+				background: none;
+				color: $site_orange;
+			}
+		}
+	}
+	.blank-image {
+		@include breakpoint(max-width, 650px) { height: 650px!important; }
+		@include breakpoint(max-width, 500px) { height: 500px!important; }
+		@include breakpoint(max-width, 400px) { height: 400px!important; }
+	}
+	.pad-less {
+		.x-column.one-half {
+			@include breakpoint(max-width, 768px) {
+				width: 100%!important;
+			}
+		}
+	}
+}
+
+#floorplans-gallery {
+	background: white;
+	padding: 20px;
+	margin: 50px auto;
+	width: 60%;
+
+	@include breakpoint(max-width, 550px) {
+		width: 80%;
+	}
+
+	.mfp-close {
+		position: relative!important;
+		float: right!important;
+
+		@include breakpoint(max-width, 400px) {
+			height: 35px;
+			line-height: 35px;
+			width: 35px;
+		}
+	}
+	h2 {
+		margin: 0 0 15px;
+
+		@include breakpoint(max-width, 400px) {
+			font-size: 185.7%
+		}
+	}
+}
+
+.lt-ie9 {
+	.x-container-fluid {
+		margin: 0 auto!important;
+		.x-main {
+			padding-top: 90px;
+		}
+	}
+	.awc-content {
+		h2 {
+			margin-top: 26.75px;
+		}
+		.caption {
+			line-height: 1.7; 
+		}
+	}
+	#floorplans-gallery {
+		.gallery .gallery-item {
+			margin: 4% 2% 0 0;
+		}
+	}
+}

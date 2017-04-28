@@ -1,0 +1,328 @@
+[
+    {
+        "name": "composer/installers",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/composer/installers.git",
+            "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/composer/installers/zipball/2d91dc9ce37bbf876cd408d483270a07001d8c7d",
+            "reference": "2d91dc9ce37bbf876cd408d483270a07001d8c7d",
+            "shasum": ""
+        },
+        "replace": {
+            "roundcube/plugin-installer": "*",
+            "shama/baton": "*"
+        },
+        "require-dev": {
+            "composer/composer": "1.0.*@dev",
+            "phpunit/phpunit": "4.1.*"
+        },
+        "time": "2015-01-21 21:08:45",
+        "type": "composer-installer",
+        "extra": {
+            "class": "Composer\\Installers\\Installer",
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "Composer\\Installers\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Kyle Robinson Young",
+                "email": "kyle@dontkry.com",
+                "homepage": "https://github.com/shama"
+            }
+        ],
+        "description": "A multi-framework Composer library installer",
+        "homepage": "http://composer.github.com/installers/",
+        "keywords": [
+            "Craft",
+            "Dolibarr",
+            "Hurad",
+            "MODX Evo",
+            "OXID",
+            "SMF",
+            "Thelia",
+            "WolfCMS",
+            "agl",
+            "annotatecms",
+            "bitrix",
+            "cakephp",
+            "chef",
+            "codeigniter",
+            "concrete5",
+            "croogo",
+            "dokuwiki",
+            "drupal",
+            "elgg",
+            "fuelphp",
+            "grav",
+            "installer",
+            "joomla",
+            "kohana",
+            "laravel",
+            "lithium",
+            "magento",
+            "mako",
+            "mediawiki",
+            "modulework",
+            "moodle",
+            "phpbb",
+            "piwik",
+            "ppi",
+            "puppet",
+            "roundcube",
+            "shopware",
+            "silverstripe",
+            "symfony",
+            "typo3",
+            "wordpress",
+            "zend",
+            "zikula"
+        ]
+    },
+    {
+        "name": "wpackagist-plugin/css-javascript-toolbox",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/css-javascript-toolbox/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/css-javascript-toolbox.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-12-07 08:55:17",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/css-javascript-toolbox/"
+    },
+    {
+        "name": "wpackagist-plugin/wp-maintenance-mode",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/wp-maintenance-mode/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/wp-maintenance-mode.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-10-07 17:59:22",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wp-maintenance-mode/"
+    },
+    {
+        "name": "wpackagist-plugin/bugherd",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/bugherd/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/bugherd.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2013-03-05 23:07:36",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/bugherd/"
+    },
+    {
+        "name": "wpackagist-plugin/duplicate-post",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/duplicate-post/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/duplicate-post.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-02-27 10:03:08",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/duplicate-post/"
+    },
+    {
+        "name": "wpackagist-plugin/contact-form-7",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/contact-form-7/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/contact-form-7.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2015-01-25 10:27:50",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/contact-form-7/"
+    },
+    {
+        "name": "wpackagist-plugin/really-simple-captcha",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/really-simple-captcha/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/really-simple-captcha.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-12-17 17:22:14",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/really-simple-captcha/"
+    },
+    {
+        "name": "wpackagist-plugin/flamingo",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/flamingo/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/flamingo.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-10-25 06:15:16",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/flamingo/"
+    },
+    {
+        "name": "wpackagist-plugin/wordpress-seo",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/wordpress-seo.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2015-01-21 08:04:03",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+    },
+    {
+        "name": "wpackagist-plugin/google-adwords-remarketing",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/google-adwords-remarketing/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/google-adwords-remarketing.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2014-05-13 23:32:42",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/google-adwords-remarketing/"
+    },
+    {
+        "name": "wpackagist-plugin/composer",
+        "version": "dev-trunk",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "svn",
+            "url": "http://plugins.svn.wordpress.org/composer/",
+            "reference": "trunk"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "http://downloads.wordpress.org/plugin/composer.zip",
+            "reference": null,
+            "shasum": null
+        },
+        "require": {
+            "composer/installers": "~1.0"
+        },
+        "time": "2013-07-15 04:17:22",
+        "type": "wordpress-plugin",
+        "installation-source": "dist",
+        "homepage": "https://wordpress.org/plugins/composer/"
+    }
+]

@@ -1,0 +1,49 @@
+.x-colophon {
+	border-top: none!important;
+	-webkit-box-shadow: none!important;
+	box-shadow: none!important;
+}
+.x-colophon.top {
+	padding: 30px 0!important;
+	background: $site_orange;
+	.textwidget {
+		text-align: center;
+	}
+	img {
+		width: 360px;
+	}
+}
+.x-colophon.bottom {
+	background: #3f4544;
+	border: none;
+
+	.footer-left {
+		display: inline-block;
+		text-align: left;
+		width: 49.75%;
+		.copyright {
+			color: white;
+			font-family: 'Avenir-Roman', $safe_font;
+			font-size: 14px;
+			margin: 0;
+		}
+		a {
+			color: white;
+			font-family: 'Avenir-Black', $safe_font;
+			font-size: 14px;
+			text-decoration: underline;
+		}
+
+		@include breakpoint(max-width, 768px) { display: block; text-align: center; width: 100%; }
+	}
+	.footer-right {
+		display: inline-block;
+		text-align: right;
+		width: 49.75%;
+		img {
+			width: 258px;
+			height: 32.5px;
+		}
+		@include breakpoint(max-width, 768px) { display: block; text-align: center; width: 100%; }
+	}
+}

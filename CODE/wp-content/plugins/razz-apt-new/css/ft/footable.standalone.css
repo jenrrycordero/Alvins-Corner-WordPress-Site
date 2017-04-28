@@ -1,0 +1,86 @@
+.footable {
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 0;
+  color: #B2B2B2;
+}
+.footable > thead > tr > th {
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+.footable > thead > tr > th,
+.footable > thead > tr > td {
+  background-color: #1E1E1E;
+}
+.footable.breakpoint > tbody > tr.footable-row-detail {
+  background: #323230;
+}
+.footable-row-detail-name,
+.footable-row-detail-value {
+  text-align: left;
+}
+.footable > tbody img {
+  vertical-align: middle;
+}
+.footable > tbody > tr:hover {
+  background: #424240;
+}
+.footable > tbody > tr > td {
+  padding: 10px;
+  text-align: center;
+  white-space: nowrap;
+  border: 0;
+  line-height: 32px;
+}
+.footable > tfoot > tr > th,
+.footable > tfoot > tr > td {
+  padding: 10px;
+  border: 0;
+}
+
+.pagination > ul > li > a {
+	border: 0;
+	-webkit-border-radius: 0 !important;
+	-moz-border-radius: 0 !important;
+	border-radius: 0 !important;
+	padding: 4px 14px !important;
+	line-height: 28px !important;
+}
+
+.footable-page > a {
+  /*background-color: #343434 !important;
+  color: #e0e0e0;*/
+}
+
+.footable-page > a:hover {
+	/*background-color: #6c96a4 !important;
+	color: #e0e0e0;*/
+}
+
+.footable-page.active > a {
+  /*background-color: #2c697d !important;
+  color: #e0e0e0 !important;*/
+}
+
+.footable-page-arrow > a {
+/*
+  background-color: #343434 !important;
+  color: #e0e0e0;*/
+}
+
+.footable-page-arrow > a:hover {
+/*
+	background-color: #6c96a4 !important;
+	color: #e0e0e0;*/
+}
+
+.footable-page-arrow.disabled > a {
+/*
+  background-color: #181818 !important;
+  color: #343434;*/
+}
+
+.pagination .footable-page > a{
+	width: 20px;
+}
